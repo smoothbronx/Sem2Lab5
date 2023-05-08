@@ -8,6 +8,7 @@ void Main()
         VarB = GetDoubleFromCommandLine("first.B"),
         VarC = GetDoubleFromCommandLine("first.C")
     };
+    Console.WriteLine();
 
     var secondLine = new DirectLine
     {
@@ -15,6 +16,7 @@ void Main()
         VarB = GetDoubleFromCommandLine("second.B"),
         VarC = GetDoubleFromCommandLine("second.C")
     };
+    Console.WriteLine();
 
     var resultWithoutException = DirectLinesExistsWithoutException(firstLine, secondLine);
     Console.WriteLine($"Две прямые{(resultWithoutException ? "" : " не")} существуют");
